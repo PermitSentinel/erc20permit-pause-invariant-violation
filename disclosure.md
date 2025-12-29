@@ -12,18 +12,18 @@ The affected project/vendor has been informed of the issue through the appropria
 Risk Mitigation:
 Sanitized code examples and recommendations are provided to help developers understand the vulnerability and apply proper mitigations, including:
 
-Applying whenNotPaused to the permit() function.
+- Applying whenNotPaused to the permit() function.
 
-Overriding _approve() to enforce pause checks.
+- Overriding _approve() to enforce pause checks.
 
 Intended Audience:
-This repository and report are intended for:
+- This repository and report are intended for:
 
-Security researchers
+- Security researchers
 
-Developers of ERC20 and upgradeable contracts
+- Developers of ERC20 and upgradeable contracts
 
-Educational purposes in security audits
+- Educational purposes in security audits
 
 Disclaimer:
 This write-up does not constitute financial advice or encouragement to exploit any live contracts. Any reproduction of these findings should be done in isolated test environments only.
