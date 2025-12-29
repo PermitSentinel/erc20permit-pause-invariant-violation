@@ -42,7 +42,7 @@ No mainnet exploitation or interaction with user funds occurred.
 
 ### Day 4 — Responsible Disclosure Attempt
 - Attempted disclosure via recognized bug bounty platforms
-- Encountered identity verification (KYC) restrictions
+- Encountered platform-level submission constraints unrelated to the technical validity of the report
 - Reached out to the project/vendor directly for notification
 
 ### Day 5 — Public Sanitized Disclosure
