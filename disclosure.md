@@ -27,3 +27,5 @@ Intended Audience:
 
 Disclaimer:
 This write-up does not constitute financial advice or encouragement to exploit any live contracts. Any reproduction of these findings should be done in isolated test environments only.
+
+This disclosure does not assert that any specific live deployment is vulnerable.
