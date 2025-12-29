@@ -65,5 +65,3 @@ A local Hardhat-based test demonstrates that:
 
 No mainnet interaction or real-user exploitation was performed.
 
-See:
-poc/pause-permit.test.js
