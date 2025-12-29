@@ -4,6 +4,8 @@
 
 A security design flaw was identified in an ERC20 token implementation where the `permit()` function remains callable while the contract is in a paused state.
 
+This behavior breaks the security invariant that a paused contract must not allow any state mutation that affects future asset movement.
+
 Although no direct token transfer is possible during pause, this behavior allows mutation of allowances during an emergency shutdown, violating the core invariant of pause mechanisms and enabling post-pause attack preparation.
 
 This issue is related to the interaction between `ERC20Permit` and `PausableUpgradeable` when pause checks are not consistently enforced.
@@ -30,6 +32,8 @@ This issue is related to the interaction between `ERC20Permit` and `PausableUpgr
 ## Severity
 
 **High**
+
+This issue is classified as High due to its ability to silently prepare post-pause fund extraction without further user interaction.
 
 ---
 
@@ -64,4 +68,6 @@ A local Hardhat-based test demonstrates that:
 3. The allowance is updated despite the paused state
 
 No mainnet interaction or real-user exploitation was performed.
+
+The proof-of-concept intentionally avoids any fund movement and is designed solely to demonstrate invariant violation.
 
