@@ -136,6 +136,16 @@ However, in scenarios involving:
 This vulnerability may escalate to **Critical**.
 
 ---
+### Broken Security Assumptions
+
+This vulnerability breaks the following assumptions commonly relied upon during incident response:
+
+- A paused token cannot change authorization state
+- No future asset movement can be prepared while paused
+- Emergency pause fully freezes attacker progress
+
+Violation of these assumptions significantly weakens emergency response effectiveness.
+---
 
 ## Summary
 
